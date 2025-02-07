@@ -191,6 +191,12 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- make resizing a bit easier
+vim.keymap.set('n', '<C-Up>', '<cmd>resize +5<cr>', { desc = 'Increase Window Height' })
+vim.keymap.set('n', '<C-Down>', '<cmd>resize -5<cr>', { desc = 'Decrease Window Height' })
+vim.keymap.set('n', '<C-Right>', '<cmd>vertical resize +5<cr>', { desc = 'Increase Window Width' })
+vim.keymap.set('n', '<C-Left>', '<cmd>vertical resize -5<cr>', { desc = 'Decrease Window Width' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
