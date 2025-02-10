@@ -1,16 +1,26 @@
 return {
-  'scottmckendry/cyberdream.nvim',
+  'talha-akram/noctis.nvim',
   lazy = false,
   priority = 1000,
   config = function()
-    require('cyberdream').setup {
-      transparent = true,
-      terminal_colors = false,
-    }
-    vim.cmd 'colorscheme cyberdream'
+    vim.cmd 'colorscheme noctis'
   end,
 }
+-- cyberdream theme (great for transparent editor)
+-- return {
+--   'scottmckendry/cyberdream.nvim',
+--   lazy = false,
+--   priority = 1000,
+--   config = function()
+--     require('cyberdream').setup {
+--       transparent = true,
+--       terminal_colors = false,
+--     }
+--     vim.cmd 'colorscheme cyberdream'
+--   end,
+-- }
 
+-- josean's theme
 -- return {
 --   'folke/tokyonight.nvim',
 --   priority = 1000,
