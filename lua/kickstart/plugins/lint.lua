@@ -9,8 +9,8 @@ return {
       -- lint.linters_by_ft['markdown'] = { 'markdownlint' }
       lint.linters_by_ft['javascript'] = { 'oxlint', 'eslint_d' }
       lint.linters_by_ft['typescript'] = { 'oxlint', 'eslint_d' }
-      lint.linters_by_ft['javascriptreact'] = { 'oxlint' }
-      lint.linters_by_ft['typescriptreact'] = { 'oxlint' }
+      lint.linters_by_ft['javascriptreact'] = { 'oxlint', 'eslint_d' }
+      lint.linters_by_ft['typescriptreact'] = { 'oxlint', 'eslint_d' }
 
       -- markdown = { 'markdownlint' },
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
